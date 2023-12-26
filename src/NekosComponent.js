@@ -53,6 +53,9 @@ function NekosComponent() {
     <div className="bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white min-h-screen flex flex-col items-center py-12 overflow-hidden">
       {/* Header */}
       <h1 className="text-3xl md:text-5xl mb-4 md:mb-8 font-bold tracking-wide">Waifu Images Generator</h1>
+      <p className="text-lg md:text-xl mb-6 text-gray-300">
+        Unleash the power to create enchanting and unique waifu images with just a click. Explore a world of infinite possibilities in every pixel.
+      </p>
 
       {/* Rating buttons */}
       <div className="mb-4 md:mb-6 flex flex-col md:flex-row md:space-x-4">
@@ -85,13 +88,12 @@ function NekosComponent() {
         {lowercaseRatings.map((rating) => (
           <button
             key={rating}
-            className={`px-6 py-3 rounded-full transition-all duration-300 transform m-1 ${
-              rating === 'explicit'
-                ? 'bg-red-500 shadow-lg hover:bg-red-700 hover:scale-105'
-                : rating === currentRating
+            className={`px-6 py-3 rounded-full transition-all duration-300 transform m-1 ${rating === 'explicit'
+              ? 'bg-red-500 shadow-lg hover:bg-red-700 hover:scale-105'
+              : rating === currentRating
                 ? 'bg-yellow-500 shadow-lg scale-105'
                 : 'bg-gray-600 hover:bg-gray-700 hover:scale-105'
-            }`}
+              }`}
             onClick={() => handleRatingButtonClick(rating)}
           >
             {rating}
@@ -140,6 +142,9 @@ function NekosComponent() {
             </div>
           ))}
       </div>
+      <footer className="mt-auto py-4 text-2xl text-center text-gray-400">
+        Coded with <span role="img" aria-label="Heart">❤️</span> by <a href="https://rohandas28.github.io" target="_blank" rel="noopener noreferrer" className="text-yellow-500 font-semibold">&lt;Rohan Das/&gt;</a>
+      </footer>
     </div>
   );
 }
