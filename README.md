@@ -16,13 +16,13 @@ To run the component locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/RohanDas28/Waifu-Finder.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repo
+   cd Waifu-Finder
    ```
 
 3. Install dependencies:
